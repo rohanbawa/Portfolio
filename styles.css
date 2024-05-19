@@ -118,7 +118,16 @@ section {
     color: #0f0202;
 }
 
+.hero .content h1{
+    font-size: 6em ;
+}
+.hero .content p{
+    font-size: 2em ;
+}
 
+#auto-typed{
+    color: #0071e3;
+}
 
 h1 {
     font-size: 3em;
@@ -188,4 +197,86 @@ form button {
 
 form button:hover {
     background: var(--button-hover);
+}
+.breadcrumb {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .hero .content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo {
+        font-size: 1.25em;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .hero .content {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        font-size: 0.9em;
+    }
+
+    form button {
+        font-size: 0.9em;
+    }
 }
