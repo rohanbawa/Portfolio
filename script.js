@@ -4,3 +4,4 @@ var typed = new Typed("#auto-typed",{
     backSpeed:50,
     loop:true
 })
+
