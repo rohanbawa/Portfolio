@@ -51,6 +51,7 @@ nav .logo {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     font-weight: 700;
+    cursor: pointer;
 }
 
 nav ul {
