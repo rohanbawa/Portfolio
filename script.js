@@ -1,3 +1,4 @@
+//auto typed.js functionality
 var typed = new Typed("#auto-typed",{
     strings:["Web Enthusiast","Tech Geek" ],
     typeSpeed:50,
@@ -6,18 +7,7 @@ var typed = new Typed("#auto-typed",{
     smartBackspace: true
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    var breadcrumb = document.querySelector(".breadcrumb");
-    var navLinks = document.querySelector("nav ul");
-
-    breadcrumb.addEventListener("click", function () {
-        if (navLinks.style.display === "block") {
-            navLinks.style.display = "none";
-        } else {
-            navLinks.style.display = "block";
-        }
-    });
-});
+//reveal divs animation
 
 window.addEventListener('scroll',reveal);
 function reveal() {
@@ -34,3 +24,18 @@ function reveal() {
     
     }
 }
+
+//hamburger
+
+document.addEventListener("DOMContentLoaded", function () {
+    var hamburger = document.querySelector(".hamburger");
+    var navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", function () {
+        navLinks.style.display = (navLinks.style.display === "block") ? "none" : "block";
+    });
+});
+
+
+openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
+closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
