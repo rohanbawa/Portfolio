@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 </head>
@@ -17,6 +16,7 @@
       <header>
         <nav>
             <div class="logo">RohanBawa</div>
+          
             <div class="hamburger">&#9776;</div>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -33,12 +33,10 @@
         </nav>
     </header>
     
-
-    <canvas id="animationCanvas"></canvas>
-    
-    
     <section id="home" class="hero reveal" >
+        
         <div class="content">
+            <div id="particles"></div>
             <h1>Hello, I'm Rohan</h1>
             <p>A <span id="auto-typed">Full Stack Developer</span></p>
         </div>
@@ -86,6 +84,7 @@
     <footer>
         <p>&copy; 2024 Rohan Bawa</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
    
 </body>
