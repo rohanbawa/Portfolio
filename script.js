@@ -25,20 +25,6 @@ function reveal() {
     }
 }
 
-//hamburger
-
-document.addEventListener("DOMContentLoaded", function () {
-    var hamburger = document.querySelector(".hamburger");
-    var navLinks = document.querySelector(".nav-links");
-
-    hamburger.addEventListener("click", function () {
-        navLinks.style.display = (navLinks.style.display === "block") ? "none" : "block";
-    });
-});
-
-
-openHam.addEventListener('click', () => hamburgerEvent("flex", "block", "none"));
-closeHam.addEventListener('click', () => hamburgerEvent("none", "none", "block"));
 
 
 //ParticleJS
